@@ -5,7 +5,7 @@ from pydantic import BaseModel, EmailStr
 from datetime import date
 from fastapi import Body, Query
 
-
+""" 
 class WorkingPosition(BaseModel):
     id: id
     name: str
@@ -15,7 +15,7 @@ class WorkingPosition(BaseModel):
 class UserRole(BaseModel):
     id: id
     name: str
-    permission: str
+    permission: str """
 
 
 class CreateUser(BaseModel):
@@ -25,7 +25,6 @@ class CreateUser(BaseModel):
     phone_number: Annotated[
         int | None,
         Query(
-            max_length=12,
             pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
         ),
     ]
@@ -34,5 +33,5 @@ class CreateUser(BaseModel):
     middle_name: Annotated[str, MinLen(3), MaxLen(20)]
     date_of_birth: date | None = Body(default=None)
     residential_addres: Annotated[str, MinLen(3), MaxLen(25)]
-    user_role: UserRole
-    working_position: WorkingPosition | None
+    #user_role: UserRole
+    #working_position: WorkingPosition | None
