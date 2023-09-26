@@ -14,5 +14,5 @@ def hello(name: str = "noname"):
     return {"message": f"hello {name}"}
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     uvicorn.run("main:app", reload=True)

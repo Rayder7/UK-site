@@ -13,7 +13,4 @@ def get_item(item_id: Annotated[int, Path(ge=1, lt=1_000_000)]):
 
 @router.get("/")
 def list_items():
-    return [
-        "item1",
-        "item2"
-    ]
+    return ["item1", "item2"]
