@@ -12,13 +12,13 @@ async def get_products(session: AsyncSession) -> list[Product]:
     return list(products)
 
 
-async def get_product(session: AsyncSession,
-                      product_id: int) -> Product:
+async def get_product(session: AsyncSession, product_id: int) -> Product:
     return await session.get(Product, product_id)
 
 
-async def create_product(session: AsyncSession,
-                         product_in: ProductCreate) -> Product:
+async def create_product(
+    session: AsyncSession, product_in: ProductCreate
+) -> Product:
     product = Product(**product_in.model_dump())
     session.add(product)
     await session.commit()
