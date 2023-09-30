@@ -18,11 +18,5 @@ app.include_router(users_router, tags=["Users"])
 app.include_router(router=router_v1, prefix=settings.api_v1_prefix)
 
 
-@app.get("/helo/")
-def hello(name: str = "noname"):
-    name = name.strip().title()
-    return {"message": f"hello {name}"}
-
-
 if __name__ == "__main__":
     uvicorn.run("main:app", reload=True)
