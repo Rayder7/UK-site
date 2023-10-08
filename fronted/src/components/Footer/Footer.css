@@ -1,0 +1,19 @@
+.footer {
+    display: block;
+}
+
+.phonenumber, .email {
+    display: flex;
+}
+
+.info-column {
+    display: flex;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.info-site {
+    text-align: center;
+}
