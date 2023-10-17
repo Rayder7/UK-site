@@ -6,7 +6,7 @@ __all__ = (
     "User",
     "New",
     "Apartment",
-    "House",
+    "Building",
     "Profile",
 )
 
@@ -16,5 +16,5 @@ from .db_helper import DatabaseHelper, db_helper
 from .user import User
 from .new import New
 from .apartment import Apartment
-from .house import House
+from .building import Building
 from .profile import Profile

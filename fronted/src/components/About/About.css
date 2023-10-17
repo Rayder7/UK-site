@@ -1,0 +1,17 @@
+.about {
+    display: block;
+}
+
+.container-about-with-photo {
+    background-image: url("https://cdn.tripster.ru/thumbs2/58be4910-54b5-11ed-81ea-3a9dc191ca34.1220x600.jpeg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.about-text-in-photo {
+    width: 500px;
+    text-align: left;
+}

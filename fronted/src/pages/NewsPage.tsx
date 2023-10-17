@@ -1,17 +1,23 @@
 import React from 'react';
 
 import { New } from '../models';
-import { NewsList } from '../components/News/News';
+import { NewObject } from '../components/News/New';
 import { newsdata } from "../data/Newsdata"
+import { Header } from '../components/Header/Header';
+import { Footer } from '../components/Footer/Footer';
 
 export function NewsPage () {
 
  
   return (
-    <div className='container mx-auto max-w-3xl pt-4'>
-
-      {newsdata.map((news: New) => <NewsList news={news} key={news.title} />) }
-      
+    <div>
+      <Header/>
+      <div className='container-news-page'>
+      <p>Новости</p> 
+        {newsdata.map((news: New) => <NewObject news={news} key={news.title}/>)}
+        
+      </div>
+      <Footer/>
     </div>
   )
 }

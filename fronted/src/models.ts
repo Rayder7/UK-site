@@ -4,3 +4,9 @@ export interface New {
     created_date: string
 
 }
+
+export interface Building {
+    street: string
+    number: string
+    square: number
+}

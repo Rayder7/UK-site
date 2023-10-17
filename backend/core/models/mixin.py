@@ -5,7 +5,7 @@ from sqlalchemy.orm import declared_attr, Mapped, mapped_column, relationship
 
 if TYPE_CHECKING:
     from .user import User
-    from .house import House
+    from .building import Building
 
 
 class UserRelationMixin:
@@ -29,22 +29,22 @@ class UserRelationMixin:
         )
 
 
-class HouseRelationMixin:
-    _house_id_unique: bool = False
-    _house_id_nullable: bool = False
-    _house_back_populates: str | None = None
+class BuildingRelationMixin:
+    _building_id_unique: bool = False
+    _building_id_nullable: bool = False
+    _building_back_populates: str | None = None
 
     @declared_attr
-    def house_id(cls) -> Mapped[int]:
+    def building_id(cls) -> Mapped[int]:
         return mapped_column(
-            ForeignKey("houses.id"),
-            unique=cls._house_id_unique,
-            nullable=cls._house_id_nullable,
+            ForeignKey("building.id"),
+            unique=cls._building_id_unique,
+            nullable=cls._building_id_nullable,
         )
 
     @declared_attr
-    def house(cls) -> Mapped["House"]:
+    def building(cls) -> Mapped["Building"]:
         return relationship(
-            "House",
-            back_populates=cls._house_back_populates,
+            "Building",
+            back_populates=cls._building_back_populates,
         )

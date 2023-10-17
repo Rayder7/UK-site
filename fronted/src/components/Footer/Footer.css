@@ -1,5 +1,8 @@
 .footer {
     display: block;
+    background-color: rgb(206, 195, 195);
+    width: 100%;
+    height: 200px;
 }
 
 .phonenumber, .email {

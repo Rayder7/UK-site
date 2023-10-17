@@ -2,7 +2,15 @@
 
 :root {
     margin: 0;
-    background-color: #F4F6EF;
-    margin: 0 25%;
-    font-family: 'Calibri';
+    margin: 0 2%;
+}
+
+.container-news-page {
+    display: flex;
+    margin: 20px;
+}
+
+.container-buildings-page {
+    display: flex;
+    margin: 20px;
 }
