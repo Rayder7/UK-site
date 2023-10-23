@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:wght@300;400;500&display=swap');
 
-:root {
-    margin: 0;
-    margin: 0 2%;
+body {
+    margin: 0px;
+    background-color: rgb(250, 250, 250);
+}
+
+
+.container-buildings-page {
+    display: inline-block;
+    margin-top: 80px;
+    text-align: center;
+    align-items: center;
 }
 
 .container-news-page {
-    display: flex;
-    margin: 20px;
+    display: inline-block;
+    margin-top: 80px;
+    text-align: center;
+    align-items: center;
+    max-width: 1200px;
+    
+    
+    
 }
 
-.container-buildings-page {
-    display: flex;
-    margin: 20px;
+.container-main-page {
+    display: block;
 }

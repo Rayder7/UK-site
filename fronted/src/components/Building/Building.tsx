@@ -2,7 +2,7 @@ import React from  "react"
 import './Building.css'
 import { Building } from "../../models"
 import { NavLink } from "react-router-dom";
-import Newobject  from  "../../static/img/newsobject.jpg"
+import Newobject  from  "../../static/img/newsobject.png"
 import { BuildingButton } from "../UI/Button/BuildingButton";
 import { BsFillBuildingFill} from "react-icons/bs";
 import { HiSquares2X2 } from "react-icons/hi2";
@@ -24,7 +24,7 @@ export function BuildingObject({building_ob}: BuildingProps) {
             </div>
             <div className='building-info-column'>
               <HiSquares2X2/>
-              {building_ob.square}
+              {building_ob.square} м2
             </div>
           </div>
           <NavLink to='/' className='nav-link'>

@@ -4,7 +4,7 @@ import { Header } from '../components/Header/Header';
 import { Building } from '../models';
 import { buildingsdata } from '../data/Buildingsdata';
 import { BuildingObject } from '../components/Building/Building';
-
+import '../index.css'
 
 export function BuildingsPage () {
 
@@ -12,8 +12,8 @@ export function BuildingsPage () {
   return (
     <div>
       <Header/>
-      <p>Объекты управляющей компании</p>
       <div className='container-buildings-page'>
+        <h1>Объекты управляющей компании</h1>
         {buildingsdata.map((building_ob: Building) => <BuildingObject building_ob={building_ob} key={building_ob.number}/>)}
       </div>
       <Footer/>

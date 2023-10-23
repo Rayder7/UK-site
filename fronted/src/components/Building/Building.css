@@ -1,5 +1,8 @@
 .container-building-object {
-    display: block;
-    height: 400px;
-    width: 300px;
+    display: inline-block;
+    min-height: 400px;
+    min-width: 300px;
+    border: 1px solid red;
+    margin: 2px;
+    
 }

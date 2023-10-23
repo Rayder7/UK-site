@@ -9,6 +9,7 @@ export function ServicePage () {
   return (
     <div>
       <Header/>
+      <h3>ergergergerg</h3>
       <Footer/>
     </div>
   )

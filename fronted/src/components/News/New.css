@@ -1,12 +1,18 @@
 .container-news-object {
     margin-top: 20px;
     display: flex;
+    align-content: center;
+    justify-content: center;
+
+
+
   }
   
 .container-news-left {
-  width: 400px;
-  height: 400px;
+  min-width: 200px;
+  min-height: 200px;
   margin: 15px;
+  border: 1px solid red;
 }
 
 .containter-news-right {
@@ -17,6 +23,10 @@
     margin-right: 20px;
     padding-bottom: 20px;
     display: block;   
+    min-height: 100px;
+    min-width: 200px;
+    border: 1px solid green;
+    
 }
 
 .news-column-created-date {

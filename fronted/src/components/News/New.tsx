@@ -1,7 +1,7 @@
 import React from  "react"
 import './New.css'
 import { New } from "../../models"
-import newobject from  "../../static/img/newsobject.jpg"
+import newobject from  "../../static/img/newsobject.png"
 
 interface NewsProps {
     news: New
