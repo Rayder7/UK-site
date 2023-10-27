@@ -1,5 +1,5 @@
 .building-btn {
-    min-width: 140px;
+    min-width: 260px;
     min-height: 60px;
     text-align: center;
     align-items: center;
@@ -7,4 +7,17 @@
     background-color: rgb(67, 177, 250);
     border-radius: 15px 15px 15px 15px;
     box-shadow: 2px 2px 2px 2px rgba(83, 83, 83, 0.2)
+}
+
+.building-btn:hover {
+    background-color: rgb(29, 162, 251);
+} 
+
+.containter-building-info {
+    margin-top: 20px;
+}
+
+.container-building-btn {
+    margin-top: 100px;
+    position: relative;
 }

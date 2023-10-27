@@ -1,8 +1,17 @@
 .container-building-object {
     display: inline-block;
+
     min-height: 400px;
     min-width: 300px;
-    border: 1px solid red;
-    margin: 2px;
+    background-color: rgb(177, 232, 249);
+    border-radius: 25px;
+    margin: 10px;
     
+}
+
+.container-building-object:hover {
+    background-color: rgb(151, 217, 248);   
+}
+.container-building-img {
+    margin-top: 10px;
 }

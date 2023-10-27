@@ -27,9 +27,11 @@ export function BuildingObject({building_ob}: BuildingProps) {
               {building_ob.square} м2
             </div>
           </div>
+          <div className="container-building-btn">
           <NavLink to='/' className='nav-link'>
             <BuildingButton/>
           </NavLink>
+          </div>
         </div>
     )
 }

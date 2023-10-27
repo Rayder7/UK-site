@@ -2,6 +2,7 @@ import React from  "react"
 import './New.css'
 import { New } from "../../models"
 import newobject from  "../../static/img/newsobject.png"
+import { NavLink } from "react-router-dom";
 
 interface NewsProps {
     news: New
@@ -18,7 +19,7 @@ export function NewObject({news}: NewsProps) {
               {news.created_date} 
             </div>
             <div className='news-column-title'>
-              {news.title} 
+              <NavLink to='/' className='nav-link'>{news.title}</NavLink>
             </div>
             <div className='news-column-text'>
               {news.text} 

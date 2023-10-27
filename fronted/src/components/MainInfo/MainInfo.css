@@ -1,0 +1,68 @@
+.maininfo {
+
+}
+
+.container-maininfo-with-photo {
+    background-image: url("https://i.pinimg.com/originals/f1/7b/35/f17b3549141eff02fb7a5efbbf1ee6e0.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+
+.maininfo-text-in-photo {
+    padding: 200px 0px 0px 200px;
+    font-size: 26px;
+    color: rgb(47, 207, 255);
+}
+
+.container-maininfo-links-board {
+    background-color: rgb(47, 207, 255);
+    height: 400px;
+}
+
+.container-maininfo-info-board {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-board {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px;
+}
+.info-board-text {
+    padding: 0px 20px;
+}
+
+.info-board-img {
+    background-color: rgb(47, 207, 255);
+    height: 305px;
+    width: 305px;
+}
+
+.info-board-text-1 {
+    position: relative;
+    background-color: rgba(183, 183, 183, 0.203);
+    padding-left: 80px;
+    padding-right: 10px;
+    right: 5%;
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.info-board-text-2 {
+    position: relative;
+    background-color: rgba(183, 183, 183, 0.203);
+    padding-right: 80px;
+    padding-left: 10px;
+    left: 5%;
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+}
