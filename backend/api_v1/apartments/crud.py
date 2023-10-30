@@ -1,4 +1,4 @@
-from sqlalchemy import select
+""" from sqlalchemy import select
 from sqlalchemy.engine import Result
 from sqlalchemy.ext.asyncio import AsyncSession
 from .schemas import ApartmentCreate, ApartmentUpdate, ApartmentUpdatePartial
@@ -47,3 +47,4 @@ async def delete_apartment(
 ) -> Apartment:
     await session.delete(apartment)
     await session.commit()
+ """

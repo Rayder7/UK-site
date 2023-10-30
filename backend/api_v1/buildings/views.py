@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.models import db_helper
 from . import crud
-from .dependencies import Building_by_id
+from .dependencies import building_by_id
 from .schemas import (
     Building,
     BuildingCreate,

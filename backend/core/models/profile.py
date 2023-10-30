@@ -12,7 +12,6 @@ class Profile(UserRelationMixin, Base):
 
     personal_account: Mapped[int] = mapped_column(unique=True)
     phone_number: Mapped[int] = mapped_column(unique=True)
-    email: Mapped[str] = mapped_column(unique=True)
     first_name: Mapped[str] = mapped_column(String(25), unique=False)
     last_name: Mapped[str] = mapped_column(String(25), unique=False)
     middle_name: Mapped[str] = mapped_column(String(25), unique=False)

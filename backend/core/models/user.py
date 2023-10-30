@@ -1,5 +1,5 @@
 from typing import TYPE_CHECKING
-from sqlalchemy.orm import Mapped, relationship
+from sqlalchemy.orm import Mapped, relationship, mapped_column
 from uuid import UUID
 
 from .base import Base
@@ -10,7 +10,12 @@ if TYPE_CHECKING:
 
 
 class User(Base):
-    id: UUID
+    id: Mapped[UUID]
+    email: Mapped[str]
+    hashed_password: Mapped[str]
+    is_active: Mapped[bool]
+    is_superuser: Mapped[bool]
+    is_verified: Mapped[bool]
 
     news: Mapped[list["New"]] = relationship(
         back_populates="user"

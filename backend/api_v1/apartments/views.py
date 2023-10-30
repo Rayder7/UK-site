@@ -1,4 +1,4 @@
-from fastapi import APIRouter, status, Depends
+""" from fastapi import APIRouter, status, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.models import db_helper
@@ -75,3 +75,4 @@ async def delete_apartment(
     session: AsyncSession = Depends(db_helper.scoped_session_dependency),
 ) -> None:
     await crud.delete_apartment(session=session, apartment=apartment)
+ """

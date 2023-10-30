@@ -14,6 +14,7 @@ if TYPE_CHECKING:
 
 
 class Building(Base):
+    id: Mapped[int]
     street: Mapped[str]
     number: Mapped[str]
     square: Mapped[float]

@@ -5,7 +5,7 @@ __all__ = (
     "Product",
     "User",
     "New",
-    "Apartment",
+    # "Apartment",
     "Building",
     "Profile",
 )
@@ -15,6 +15,7 @@ from .product import Product
 from .db_helper import DatabaseHelper, db_helper
 from .user import User
 from .new import New
-from .apartment import Apartment
+
+# from .apartment import Apartment
 from .building import Building
 from .profile import Profile

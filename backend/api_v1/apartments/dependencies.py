@@ -1,4 +1,4 @@
-from typing import Annotated
+""" from typing import Annotated
 
 from fastapi import Path, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -22,3 +22,4 @@ async def apartment_by_id(
         status_code=status.HTTP_404_NOT_FOUND,
         detail=f"apartment {apartment_id} not found!",
     )
+ """
